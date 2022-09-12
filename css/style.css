@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --color-state:hsl(228, 45%, 44%); 
+
+
+    --Red-hat-font: 'Red Hat Display', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Pale-blue);
+}
+p{
+    font-size: 16px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+section{
+    margin: 16px;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 370px;
+    height: 620px;
+}
+.card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color:white;
+    border-radius: 24px;
+}
+.cardImage{
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/illustration-hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px 24px 0 0;
+}
+.cardContent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.cardContent h1{
+    font-family: var(--Red-hat-font);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 8px;
+}
+.cardContent > p{
+    text-align: center;
+    font-family: var(--Red-hat-font);
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    margin: 16px;
+}
+.planContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 8px;
+    padding: 16px 0 16px 0;
+    font-family: var(--Red-hat-font);
+    margin: 24px 16px 24px 16px; 
+}
+.planContainer > img{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.planContainer > a{
+    color: var(--Bright-blue);
+    font-size: 1.0em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.planContainer > a:hover{
+    color: var(--color-state);
+}
+.planContent > h3{
+    font-size: 1.0em;
+}
+.planContent > p{
+    color: var(--Desaturated-blue);
+}
+.btnPayment{
+    padding: 16px 16px ;
+    margin: 0 16px 0 16px;
+    border-radius: 12px;
+    font-size: 1.0em;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    cursor: pointer;
+}
+.btnPayment:hover{
+    background-color: var(--color-state);
+}
+.btnCancelOrder{
+    padding: 16px 16px ;
+    border-radius: 12px;
+    font-size: 1.0em;
+    margin-top: 8px;
+    color: var(--Desaturated-blue);
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.btnCancelOrder:hover{
+    color: var(--Dark-blue);
+}
